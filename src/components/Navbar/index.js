@@ -7,7 +7,9 @@ const Navbar = () => {
     const [click, setClick] = useState(false);
     const [scroll, setScroll] = useState(false);
 
-    const handleClick = () => setClick(!click);
+    const handleClick = () => {
+        setClick(!click)
+    };
 
     const changeNav = () => {
         if (window.scrollY >= 80) {
@@ -32,7 +34,7 @@ const Navbar = () => {
                             EXPLORE
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
-                            {click ? <Fatimes /> : <FaBars />}
+                            {click ? <Fatimes/> : <FaBars/>}
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
