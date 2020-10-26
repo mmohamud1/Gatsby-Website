@@ -1,5 +1,6 @@
 import React from 'react'
 import './HeroSection.css'
+import { Button } from '../ButtonElements'
 
 const HeroSection = () => {
     return (
@@ -7,7 +8,7 @@ const HeroSection = () => {
             <h1>Travel More</h1>
             <p>Plan your next trip today</p>
             <div className="hero-btns">
-               <button>Get Started</button> 
+               <Button fontBig big primary>Get Started</Button> 
             </div>
         </div>
     )
