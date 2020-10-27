@@ -11,7 +11,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false)
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 400) {
       setScroll(true)
     } else {
       setScroll(false)
