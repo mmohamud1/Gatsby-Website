@@ -30,7 +30,7 @@ const Navbar = () => {
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
               <NavIcon />
-              EXPLORE
+              MO-TRAVEL
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/images">Images</NavLinks>
+                <NavLinks to="/images">Gallery</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/destinations">Destinations</NavLinks>
