@@ -19,7 +19,7 @@ const Footer = () => {
             <SocialIconLink href="/" target="_blank" aria-label="Instagram">
               <FaInstagram />
             </SocialIconLink>
-            <SocialIconLink href={"//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"} target="_blank" aria-label="Youtube" rel="noopener noreferrer">
+            <SocialIconLink href="/" target="_blank" aria-label="Youtube" rel="noopener noreferrer">
               <FaYoutube />
             </SocialIconLink>
             <SocialIconLink href="/" target="_blank" aria-label="Twitter">
