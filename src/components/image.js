@@ -1,7 +1,7 @@
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import React from "react"
-import './image.css'
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
+import React from 'react';
+import './image.css';
 
 const Image = () => {
   const data = useStaticQuery(graphql`
@@ -24,23 +24,23 @@ const Image = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
-    <div className="image-container">
+    <div className='image-container'>
       <h1>View our Destinations</h1>
-      <div className="image-grid">
+      <div className='image-grid'>
         {data.allFile.edges.map((image, key) => (
           <Img
             key={key}
-            className="image-item"
+            className='image-item'
             fluid={image.node.childImageSharp.fluid}
-            alt={image.node.base.split(".")[0]} // only use section of the file extension with the filename
+            alt={image.node.base.split('.')[0]} // only use section of the file extension with the filename
           />
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Image
+export default Image;
